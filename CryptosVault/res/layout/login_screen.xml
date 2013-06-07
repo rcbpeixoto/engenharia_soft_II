@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#A3A3A3"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dip"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="0.5"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/LoginTitle"
+                style="@style/theme.TitleGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:text="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="3.5"
+            android:gravity="right" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@drawable/ic_menu_help" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="4" >
+
+            <EditText
+                android:id="@+id/EdtLoginPassword"
+                style="@style/theme.TitleGrey"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:digits="1234567890"
+                android:drawableLeft="@drawable/ic_secure"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textSize="20dip"
+                android:typeface="sans" >
+
+                <requestFocus />
+            </EditText>
+
+            <include
+                android:layout_marginBottom="10dip"
+                layout="@layout/login_keyboard" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

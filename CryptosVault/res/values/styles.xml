@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="theme.TitleGrey" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#6E6868</item>
+    </style>
+
+    <style name="theme.TextLabelGrey15" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#5b616d</item>
+    </style>
+
+    <style name="theme.TextLabelGrey23" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">23dp</item>
+        <item name="android:textColor">#5b616d</item>
+    </style>
+
+    <style name="theme.InputTextGrey30" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#93adc9</item>
+    </style>
+
+    <style name="theme.TextLabelBlack16" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:id="@+id/keypadRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="1"
+            android:text="1" />
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="2"
+            android:text="2" />
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="3"
+            android:text="3" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/keypadRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="4"
+            android:text="4" />
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="5"
+            android:text="5" />
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="6"
+            android:text="6" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/keypadRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="7"
+            android:text="7" />
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="8"
+            android:text="8" />
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="9"
+            android:text="9" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/keypadRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/btn_cancel_password"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/cancel_color" />
+
+        <Button
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:tag="0"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/btn_confirm_password"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/check_color" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    
+    <string name="app_name">Cryptos Vault</string>
+    <string name="sd_mounted">SD Card montado</string>
+    <string name="sd_read_only">SD Card modo apenas leitura</string>
+    <string name="sd_unmounted">SD Card desmontado</string>
+<string name="keystore_tab_label">Chaveiro</string>
+    <string name="message_tab_label">Mensagens</string>
+    <string name="files_tab_label">Cofre</string>
+    <string name="menu_configuration_label">Configurações</string>
+    <string name="error_title">ERRO</string>
+    <string name="incorrect_password">Senha incorreta!</string>
+    <string name="ok_label">OK</string>
+    <string name="email_title">E-mail</string>
+    <string name="password_title">Senha</string>
+    <string name="password_hint">Senha</string>
+    <string name="email_hint">E-mail</string>
+    <string name="btn_register_label">Cadastrar</string>
+    <string name="invalid_password">Senha inválida</string>
+    <string name="invalid_email">Email inválido</string>
+    <string name="menu_about_label">Sobre</string>
+    <string name="label_wait">Por favor Aguarde.</string>
+    <string name="label_select_safe_file">Selecione algum arquivo no cofre</string>
+    <string name="sdcardNotReady">O sdcard não está pronto para uso!</string>
+    <string name="selectSdcardFile">Selecione algum arquivo no sdcard</string>
+    <string name="current_directory">Diretório atual:</string>
+    <string name="menu_exit_label">Sair</string>
+    <string name="keystore_insert">Inserir Senha</string>
+    <string name="keystore_remove">Remover Senha</string>
+    <string name="keystore_expire_label">Senha expira em:</string>
+    <string name="keystore_edit_label">Editar Senha</string>
+    <string name="keystore_description_label">Descrição:</string>
+</resources>

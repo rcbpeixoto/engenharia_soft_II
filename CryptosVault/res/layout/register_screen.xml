@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dip"
+        android:gravity="top"
+        android:weightSum="4"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:layout_weight="0.5" >
+
+            <TextView
+                android:id="@+id/LoginTitle"
+                style="@style/theme.TitleGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:text="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:gravity="right"
+            android:layout_weight="3.5" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:src="@drawable/ic_menu_help" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="8" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <include layout="@layout/login_keyboard" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/EdtRegisterEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:drawableLeft="@android:drawable/sym_action_email"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/EdtRegisterPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:digits="0123456789"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_register_label" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

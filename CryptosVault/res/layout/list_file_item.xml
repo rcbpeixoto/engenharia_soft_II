@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/itemCheckbox"
+        android:layout_width="27px"
+        android:layout_height="27px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="3px"
+        android:background="@drawable/checkbox"
+        android:button="@null"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/itemThumb"
+        android:layout_width="32px"
+        android:layout_height="32px"
+        android:layout_marginLeft="3dip"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/folder" />
+
+    <TextView
+        android:id="@+id/itemNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7px"
+        android:singleLine="true"
+        android:text="itemName"
+        android:textSize="15px" />
+
+</LinearLayout>
