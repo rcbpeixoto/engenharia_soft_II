@@ -31,6 +31,6 @@ public class Constants {
 	
 	public static final String DROID_SANS_FONT = "fonts/DROIDSANS.TTF";
 	public static final String ZERO_THREE_FONT = "fonts/ZEROTHREE.TTF";
-	public static final int DELAY = 3000;
+	public static final int DELAY_SPLASH = 1000;
 	public static final int PASSWORD_MAX_LENGTH = 8;
 }

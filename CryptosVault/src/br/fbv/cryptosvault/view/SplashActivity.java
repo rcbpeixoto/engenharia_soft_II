@@ -42,7 +42,7 @@ public class SplashActivity extends Activity implements Runnable{
 		}
 		
 		Handler handler = new Handler();
-		handler.postDelayed(this, Constants.DELAY);
+		handler.postDelayed(this, Constants.DELAY_SPLASH);
 	}
 	
 	@Override

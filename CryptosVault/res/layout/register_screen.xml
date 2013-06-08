@@ -58,7 +58,14 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <include layout="@layout/login_keyboard" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dip"
+                android:padding="50dip"
+                android:src="@drawable/iconvaultfile" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -76,7 +83,7 @@
                 android:drawableLeft="@android:drawable/sym_action_email"
                 android:hint="@string/email_hint"
                 android:inputType="textEmailAddress"
-                android:typeface="sans" />
+                android:typeface="sans" ></EditText>
 
             <EditText
                 android:id="@+id/EdtRegisterPassword"
@@ -91,7 +98,7 @@
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="wrap_content"
+                android:layout_width="158dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/btn_register_label" />

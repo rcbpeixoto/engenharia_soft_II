@@ -56,6 +56,15 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_margin="50dip"
+                android:padding="50dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/iconvaultfile" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -70,10 +79,10 @@
             <EditText
                 android:id="@+id/EdtLoginPassword"
                 style="@style/theme.TitleGrey"
-                android:layout_width="160dip"
+                android:layout_width="365dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dip"
-                android:layout_weight="1"
+                android:layout_weight="0.57"
                 android:digits="1234567890"
                 android:drawableLeft="@drawable/ic_secure"
                 android:gravity="center"

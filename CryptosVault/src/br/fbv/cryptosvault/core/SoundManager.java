@@ -17,6 +17,7 @@ public class SoundManager {
     public static final int     DIGIT       = 0;
     public static final int     LOGIN_OK    = 1;
     public static final int     LOGIN_WRONG = 2;
+    public static final int		DELETE = 3;
 
     private static final int    MAXSTREAMS  = 1;
     /**
@@ -36,6 +37,7 @@ public class SoundManager {
         addSound(R.raw.digit_new);
         addSound(R.raw.login_ok);
         addSound(R.raw.login_wrong);
+        addSound(R.raw.delete);
     }
 
     /**

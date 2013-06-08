@@ -1,9 +1,11 @@
 package br.fbv.cryptosvault.view;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import br.fbv.cryptosvault.R;
@@ -13,39 +15,49 @@ import br.fbv.cryptosvault.model.exception.InvalidPasswordException;
 import br.fbv.cryptosvault.model.util.Util;
 
 /**
- * @author  Rogério
+ * @author Rogério
  */
 public class RegisterActivity extends Activity implements OnClickListener {
-	
+
 	/**
-	 * @uml.property  name="accountManager"
-	 * @uml.associationEnd  
+	 * @uml.property name="accountManager"
+	 * @uml.associationEnd
 	 */
-	private AccountManager accountManager;
-	private EditText edtEmail;
-	private EditText edtPassword;
-	private Button btnRegister;
-	
+	private AccountManager	accountManager;
+	private EditText		edtEmail;
+	private EditText		edtPassword;
+	private Button			btnRegister;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		accountManager = AccountManager.getInstance(this);
 		setContentView(R.layout.register_screen);
-		
+
 		edtEmail = (EditText) findViewById(R.id.EdtRegisterEmail);
 		edtPassword = (EditText) findViewById(R.id.EdtRegisterPassword);
 		btnRegister = (Button) findViewById(R.id.btnRegister);
-		
+
+		InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+		mgr.showSoftInput(edtEmail, InputMethodManager.SHOW_IMPLICIT);
+		edtEmail.requestFocus();
+		edtEmail.postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				InputMethodManager keyboard = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+				keyboard.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+			}
+		}, 200);
 		btnRegister.setOnClickListener(this);
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		accountManager = null;
 		super.onDestroy();
 	}
-	
+
 	@Override
 	public void onBackPressed() {
 		setResult(RESULT_CANCELED);
@@ -60,18 +72,10 @@ public class RegisterActivity extends Activity implements OnClickListener {
 				setResult(RESULT_OK);
 				finish();
 			} catch (InvalidEmailException e) {
-				Util.showDialog(R.string.error_title,
-								R.drawable.error_icon, 
-								R.string.invalid_email, 
-								R.string.ok_label, 
-								this);
+				Util.showDialog(R.string.error_title, R.drawable.error_icon, R.string.invalid_email, R.string.ok_label, this);
 				e.printStackTrace();
 			} catch (InvalidPasswordException e) {
-				Util.showDialog(R.string.error_title,
-						R.drawable.error_icon, 
-						R.string.invalid_password, 
-						R.string.ok_label, 
-						this);
+				Util.showDialog(R.string.error_title, R.drawable.error_icon, R.string.invalid_password, R.string.ok_label, this);
 				e.printStackTrace();
 			}
 		}
