@@ -99,7 +99,7 @@ public class TabHostActivity extends TabActivity  {
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.tabhost_menu, menu);
+		//getMenuInflater().inflate(R.menu.tabhost_menu, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
 
